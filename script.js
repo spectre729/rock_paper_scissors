@@ -16,6 +16,23 @@ function getHumanChoice(){
     return val
 }
 
+
+const rock = document.querySelector(".rock button");
+const paper = document.querySelector(".paper button");
+const scissors = document.querySelector(".scissors button");
+
+rock.addEventListener("click", () => {
+    console.log("Rock button clicked");
+});
+paper.addEventListener("click", () => {
+    console.log("Paper button clicked");
+});
+scissors.addEventListener("click", () => {
+    console.log("Scissors button clicked");
+});
+
+
+
 let humanScore, computerScore = 0
 
 
@@ -66,11 +83,6 @@ function playRound(humanChoice, computerChoice){
 
 
 function playGame(){
-    for (let i = 0; i < 5; i++){
-        let humanSelection = getHumanChoice().toLowerCase()
-        let computerSelection = getComputerChoice()
-        playRound(humanSelection, computerSelection)
-    }
 }
 
 
